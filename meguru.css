@@ -37,6 +37,14 @@ h1 {
     transform-style:preserve-3d;
     width:200px;
     height:200px;
+    animation-name: turnAround;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
     /* ここの秒数をいじると回転する速度が変わるよ */
     /*animation: turnAround 4s linear 0s infinite normal none running;*/
   }
