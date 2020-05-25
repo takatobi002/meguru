@@ -1,0 +1,65 @@
+<head>
+<link rel="stylesheet" type="text/css" href="meguru.css">
+<title>回転する「回」からの脱出</title>
+
+<script language="JavaScript">
+　function check(){
+　if (document.que1.answer.value=="42"){
+  alert("「回」は静かに回転をやめた。脱出成功！");
+  
+　var div = document.getElementById("cube");
+  div.style.animationPlayState = 'paused';
+　}
+　else {
+　alert("答えが間違っているようだ")
+　}
+　}
+</script>
+
+
+</head>
+
+<body>
+<h1>回転する「回」からの脱出</h1>
+
+<p>下の<a href="https://www.google.co.jp/search?q=生命、宇宙、そして万物についての究極の疑問の答え" class="hidelink2">窓</a>に答えを入力しろ！</p>
+
+<FORM name="que1">
+<INPUT type="text" name="answer">
+<INPUT type="button" value="回答する" onClick="check()">
+</FORM>
+
+<!--回転体-->
+<div id="cube">
+    <div class="boxBase">
+        <div class="square top"> <div class= "square2"></div> </div>
+        <div class="square bottom"> <div class= "square2"></div> </div>
+        <div class="square front"> <div class= "square2"></div> </div>
+        <div class="square back"> <div class= "square2"></div> </div>
+        <div class="square left"> <div class= "square2"></div> </div>
+        <div class="square right"> <div class= "square2"></div> </div>
+        <style type="text/css">
+        .boxBase{
+        animation-name: turnAround;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-delay 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        }
+        </style>
+    </div>
+</div>
+
+<p>「A」を「B」しろ！</p>
+
+<h2>問題A</h2>
+<img src="q-1.png">
+
+
+<h2>問題B</h2>
+<img src="q-3.png">
+
+</body>
